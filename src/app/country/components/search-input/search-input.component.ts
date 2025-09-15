@@ -1,9 +1,11 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
-  selector: 'app-search-input',
+  selector: 'country-search-input',
   imports: [],
   templateUrl: './search-input.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SearchInputComponent { }
+export class SearchInputComponent {
+  placeholder = input('Buscar');
+  value = output<string>();
+}

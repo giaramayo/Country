@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-country-page',
+  selector: 'country-page',
   imports: [],
   templateUrl: './country-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
