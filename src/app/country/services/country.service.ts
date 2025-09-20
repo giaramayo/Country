@@ -21,9 +21,8 @@ export class CountryService {
       map((resp) => CountryMapper.mapRestCountryArrayToCountryArray(resp)),
       catchError((error) => {
         console.log('Error fetching ', error);
-
         return throwError(
-          () => new Error(`No se pudo obtener países con ese query ${query}`)
+          () => new Error(`No se pudo obtener países con ese código ${query}`)
         );
       })
     );
@@ -41,7 +40,7 @@ export class CountryService {
         console.log('Error fetching ', error);
 
         return throwError(
-          () => new Error(`No se pudo obtener países con ese query ${query}`)
+          () => new Error(`No se pudo obtener países con ese código ${query}`)
         );
       })
     );
