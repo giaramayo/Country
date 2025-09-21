@@ -18,7 +18,7 @@ Una aplicación que permite buscar y visualizar información de países de maner
 
 ## 🚀 Demo
 
-[![Demo](https://raw.githubusercontent.com/giaramayo/gifs-app/refs/heads/main/assets/demo.png)](https://giaramayo.github.io/Country)
+[![Demo](https://github.com/giaramayo/Country/blob/main/assets/demo.png)](https://giaramayo.github.io/Country)
 
 ---
 
