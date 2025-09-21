@@ -13,7 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ByCapitalPageComponent {
   countryService = inject(CountryService);
-   activatedRoute = inject(ActivatedRoute);
+  activatedRoute = inject(ActivatedRoute);
   router = inject(Router);
 
   queryParam = this.activatedRoute.snapshot.queryParamMap.get('query') ?? '';

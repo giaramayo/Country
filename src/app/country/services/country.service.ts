@@ -64,8 +64,8 @@ export class CountryService {
   searchByRegion(region: Region) {
     const url = `${API_URL}/region/${region}`;
 
-    if (this.queryCacheCountry.has(region)) {
-      return of(this.queryCacheCountry.get(region) ?? []);
+    if (this.queryCacheRegion.has(region)) {
+      return of(this.queryCacheRegion.get(region) ?? []);
     }
 
     return this.http.get<RESTCountry[]>(url).pipe(
